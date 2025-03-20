@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuVisitRegistration;
 
-use Zahzah\ModulePatient\Resources\VisitRegistration\ShowVisitRegistration;
+use Hanafalah\ModulePatient\Resources\VisitRegistration\ShowVisitRegistration;
 
 class ShowMcuVisitRegistration extends ShowVisitRegistration
 {
@@ -14,10 +14,9 @@ class ShowMcuVisitRegistration extends ShowVisitRegistration
      */
     public function toArray(\Illuminate\Http\Request $request): array
     {
-        $arr = [
-        ];
-        $arr = $this->mergeArray(parent::toArray($request),$arr);
-        
+        $arr = [];
+        $arr = $this->mergeArray(parent::toArray($request), $arr);
+
         return $arr;
     }
 }

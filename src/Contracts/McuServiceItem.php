@@ -2,7 +2,6 @@
 
 namespace Aibnuhibban\ModuleMcu\Contracts;
 
-use Gii\ModuleService\Contracts\ServiceItem;
+use Hanafalah\ModuleService\Contracts\ServiceItem;
 
-interface McuServiceItem extends ServiceItem{
-}
+interface McuServiceItem extends ServiceItem {}

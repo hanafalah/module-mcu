@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuPackage;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class ShowMcuPackage extends ViewMcuPackage
 {
@@ -15,27 +15,27 @@ class ShowMcuPackage extends ViewMcuPackage
     public function toArray($request): array
     {
         $arr = [
-            'price_components' => $this->relationValidation('priceComponents',function(){
-                return $this->priceComponents->transform(function($priceComponent){
+            'price_components' => $this->relationValidation('priceComponents', function () {
+                return $this->priceComponents->transform(function ($priceComponent) {
                     return $priceComponent->toShowApi();
                 });
             }),
-            'treatment'        => $this->relationValidation('treatment',function(){
+            'treatment'        => $this->relationValidation('treatment', function () {
                 return $this->treatment->toShowApi();
             }),
-            'treatments'       => $this->relationValidation('treatments',function(){
-                return $this->treatments->transform(function($treatment){
+            'treatments'       => $this->relationValidation('treatments', function () {
+                return $this->treatments->transform(function ($treatment) {
                     return $treatment->toShowApi();
                 });
             }),
-            'childs' => $this->relationValidation('childs',function(){
-                return $this->childs->transform(function($child){
+            'childs' => $this->relationValidation('childs', function () {
+                return $this->childs->transform(function ($child) {
                     return $child->toShowApi();
                 });
             })
         ];
-        $arr = $this->mergeArray(parent::toArray($request),$arr);
-        
+        $arr = $this->mergeArray(parent::toArray($request), $arr);
+
         return $arr;
     }
 }

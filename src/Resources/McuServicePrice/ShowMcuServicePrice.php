@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuServicePrice;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class ShowMcuServicePrice extends ViewMcuServicePrice
 {
@@ -15,19 +15,19 @@ class ShowMcuServicePrice extends ViewMcuServicePrice
     public function toArray($request): array
     {
         $arr = [
-            'childs'    => $this->relationValidation('childs',function(){
-                return $this->childs->transform(function($child){
+            'childs'    => $this->relationValidation('childs', function () {
+                return $this->childs->transform(function ($child) {
                     return $child->toShowApi();
                 });
             }),
-            'service_prices' => $this->relationValidation('servicePrices',function(){
-                return $this->servicePrices->transform(function($service_price){
+            'service_prices' => $this->relationValidation('servicePrices', function () {
+                return $this->servicePrices->transform(function ($service_price) {
                     return $service_price->toShowApi();
                 });
             })
         ];
-        $arr = $this->mergeArray(parent::toArray($request),$arr);
-        
+        $arr = $this->mergeArray(parent::toArray($request), $arr);
+
         return $arr;
     }
 }

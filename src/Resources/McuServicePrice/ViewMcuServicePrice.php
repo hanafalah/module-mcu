@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuServicePrice;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class ViewMcuServicePrice extends ApiResource
 {
@@ -18,13 +18,13 @@ class ViewMcuServicePrice extends ApiResource
         $arr = [
             'id'        => $this->id,
             'parent_id' => $this->parent_id,
-            'childs'    => $this->relationValidation('childs',function(){
-                return $this->childs->transform(function($child){
+            'childs'    => $this->relationValidation('childs', function () {
+                return $this->childs->transform(function ($child) {
                     return $child->toViewApi();
                 });
             }),
-            'service_prices' => $this->relationValidation('servicePrices',function(){
-                return $this->servicePrices->transform(function($service_price){
+            'service_prices' => $this->relationValidation('servicePrices', function () {
+                return $this->servicePrices->transform(function ($service_price) {
                     return $service_price->toViewApi();
                 });
             })
@@ -32,7 +32,7 @@ class ViewMcuServicePrice extends ApiResource
         foreach ($props as $key => $prop) {
             $arr[$key] = $prop;
         }
-        
+
         return $arr;
     }
 }

@@ -43,6 +43,6 @@ class InstallMakeCommand extends EnvironmentCommand{
 
         $this->info('✔️  App table migrated');
 
-        $this->comment('zahzah/module-patient installed successfully.');
+        $this->comment('hanafalah/module-patient installed successfully.');
     }
 }

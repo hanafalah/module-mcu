@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuCategory;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class McuCategory extends ApiResource
 {
@@ -11,7 +11,7 @@ class McuCategory extends ApiResource
         $arr = [];
 
         $arr = array_merge(parent::toArray($request), $arr);
-        
+
         return $arr;
     }
 }

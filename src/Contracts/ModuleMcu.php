@@ -2,8 +2,6 @@
 
 namespace Aibnuhibban\ModuleMcu\Contracts;
 
-use Zahzah\LaravelSupport\Contracts\DataManagement;
+use Hanafalah\LaravelSupport\Contracts\DataManagement;
 
-interface ModuleMcu extends DataManagement{
-    
-}
+interface ModuleMcu extends DataManagement {}

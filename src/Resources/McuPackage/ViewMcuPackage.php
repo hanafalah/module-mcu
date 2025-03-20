@@ -2,7 +2,7 @@
 
 namespace Aibnuhibban\ModuleMcu\Resources\McuPackage;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class ViewMcuPackage extends ApiResource
 {
@@ -22,37 +22,37 @@ class ViewMcuPackage extends ApiResource
             'company_id'       => $this->company_id,
             'agent_id'         => $this->agent_id,
             'payer_id'         => $this->payer_id,
-            'company'          => isset($this->prop_company) ? \call_user_func(function(){
-                                    return [
-                                        'id' => $this->prop_company['id'],
-                                        'name' => $this->prop_company['name']
-                                    ];
-                                }) : null,
+            'company'          => isset($this->prop_company) ? \call_user_func(function () {
+                return [
+                    'id' => $this->prop_company['id'],
+                    'name' => $this->prop_company['name']
+                ];
+            }) : null,
 
             'companies'      => $this->prop_companies ?? [],
             'payers'         => $this->prop_payers ?? [],
             'agents'         => $this->prop_agents ?? [],
             'medic_services' => $this->prop_medic_services ?? [],
-            'treatment'      => $this->relationValidation('treatment',function(){
+            'treatment'      => $this->relationValidation('treatment', function () {
                 return $this->treatment->toViewApi();
             }),
-            'treatments'       => $this->relationValidation('treatments',function(){
-                return $this->treatments->transform(function($treatment){
+            'treatments'       => $this->relationValidation('treatments', function () {
+                return $this->treatments->transform(function ($treatment) {
                     return $treatment->toViewApi();
                 });
             }),
-            'price_components' => $this->relationValidation('priceComponents',function(){
-                return $this->priceComponents->transform(function($priceComponent){
+            'price_components' => $this->relationValidation('priceComponents', function () {
+                return $this->priceComponents->transform(function ($priceComponent) {
                     return $priceComponent->toViewApi();
                 });
             }),
-            'childs' => $this->relationValidation('childs',function(){
-                return $this->childs->transform(function($child){
+            'childs' => $this->relationValidation('childs', function () {
+                return $this->childs->transform(function ($child) {
                     return $child->toViewApi();
                 });
             })
         ];
-        
+
         return $arr;
     }
 }
