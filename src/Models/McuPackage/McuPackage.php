@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Hanafalah\LaravelSupport\Concerns\Support\HasEncoding;
 use Hanafalah\LaravelSupport\Models\BaseModel;
 use Hanafalah\LaravelHasProps\Concerns\HasProps;
-use Gilanggustina\ModuleTreatment\Concerns\HasTreatment;
+use Hanafalah\ModuleTreatment\Concerns\HasTreatment;
 use Hanafalah\ModuleMcu\Resources\McuPackage\{
     ViewMcuPackage,
     ShowMcuPackage

@@ -4,7 +4,7 @@ namespace Hanafalah\ModuleMcu\Models\McuServicePrice;
 
 use Hanafalah\ModuleMcu\Resources\McuServicePrice\ShowMcuServicePrice;
 use Hanafalah\ModuleMcu\Resources\McuServicePrice\ViewMcuServicePrice;
-use Gilanggustina\ModuleTreatment\Models\Treatment\Treatment;
+use Hanafalah\ModuleTreatment\Models\Treatment\Treatment;
 
 class McuServicePrice extends Treatment
 {

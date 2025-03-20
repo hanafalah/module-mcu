@@ -6,7 +6,7 @@
         "hanafalah/laravel-support": "1.x",
         "hanafalah/module-patient": "1.x",
         "hanafalah/module-transaction": "1.x",
-        "gilanggustina/module-treatment": "1.x",
+        "hanafalah/module-treatment": "1.x",
         "hanafalah/module-service": "1.x"
     },
     "autoload": {
