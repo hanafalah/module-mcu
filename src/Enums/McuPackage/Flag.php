@@ -1,8 +1,9 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Enums\McuPackage;
+namespace Hanafalah\ModuleMcu\Enums\McuPackage;
 
-enum Flag : string {
+enum Flag: string
+{
     case MAIN_PACKAGE       = 'MAIN_PACKAGE';
     case CATEGORY_PACKAGE   = 'CATEGORY';
     case SPESICIAL_PACKAGE  = 'SPECIAL_PACKAGE';

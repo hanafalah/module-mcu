@@ -1,11 +1,11 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Schemas;
+namespace Hanafalah\ModuleMcu\Schemas;
 
-use Aibnuhibban\ModuleMcu\Enums\McuPackage\Flag;
-use Aibnuhibban\ModuleMcu\Contracts\McuPackage as ContractsMcuPackage;
-use Aibnuhibban\ModuleMcu\Resources\McuPackage\ShowMcuPackage;
-use Aibnuhibban\ModuleMcu\Resources\McuPackage\ViewMcuPackage;
+use Hanafalah\ModuleMcu\Enums\McuPackage\Flag;
+use Hanafalah\ModuleMcu\Contracts\McuPackage as ContractsMcuPackage;
+use Hanafalah\ModuleMcu\Resources\McuPackage\ShowMcuPackage;
+use Hanafalah\ModuleMcu\Resources\McuPackage\ViewMcuPackage;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

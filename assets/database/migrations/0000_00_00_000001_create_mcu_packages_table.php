@@ -1,6 +1,6 @@
 <?php
 
-use Aibnuhibban\ModuleMcu\Models\McuPackage\McuPackage;
+use Hanafalah\ModuleMcu\Models\McuPackage\McuPackage;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

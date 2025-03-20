@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Contracts;
+namespace Hanafalah\ModuleMcu\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

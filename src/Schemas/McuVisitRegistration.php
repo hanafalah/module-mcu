@@ -1,12 +1,12 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Schemas;
+namespace Hanafalah\ModuleMcu\Schemas;
 
-use Aibnuhibban\ModuleMcu\Contracts\{
+use Hanafalah\ModuleMcu\Contracts\{
     McuCategory,
     McuVisitRegistration as ContractsMcuVisitRegistration
 };
-use Aibnuhibban\ModuleMcu\Resources\McuVisitRegistration\{
+use Hanafalah\ModuleMcu\Resources\McuVisitRegistration\{
     ShowMcuVisitRegistration,
     ViewMcuVisitRegistration
 };

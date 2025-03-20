@@ -3,15 +3,16 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Aibnuhibban\ModuleMcu\Models\McuCategory\{
+use Hanafalah\ModuleMcu\Models\McuCategory\{
     McuCategory
 };
 
 return new class extends Migration
 {
-    private $__table,$__table_service;
+    private $__table, $__table_service;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->__table = app(config('database.models.McuCategory', McuCategory::class));
     }
 
@@ -23,7 +24,7 @@ return new class extends Migration
     public function up(): void
     {
         $table_name = $this->__table->getTable();
-        if (!Schema::hasTable($table_name)){
+        if (!Schema::hasTable($table_name)) {
             Schema::create($table_name, function (Blueprint $table) {
                 $table->id();
                 $table->string('name')->nullable(false);

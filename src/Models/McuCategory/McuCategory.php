@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Models\McuCategory;
+namespace Hanafalah\ModuleMcu\Models\McuCategory;
 
 use Hanafalah\LaravelSupport\Models\BaseModel;
 use Illuminate\Database\Eloquent\SoftDeletes;

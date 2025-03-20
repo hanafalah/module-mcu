@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aibnuhibban\ModuleMcu;
+namespace Hanafalah\ModuleMcu;
 
 use Hanafalah\LaravelSupport\Providers\BaseServiceProvider;
 

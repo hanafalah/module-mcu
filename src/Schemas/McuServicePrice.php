@@ -1,10 +1,10 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Schemas;
+namespace Hanafalah\ModuleMcu\Schemas;
 
-use Aibnuhibban\ModuleMcu\Contracts\McuServicePrice as ContractsMcuServicePrice;
-use Aibnuhibban\ModuleMcu\Resources\McuServicePrice\ShowMcuServicePrice;
-use Aibnuhibban\ModuleMcu\Resources\McuServicePrice\ViewMcuServicePrice;
+use Hanafalah\ModuleMcu\Contracts\McuServicePrice as ContractsMcuServicePrice;
+use Hanafalah\ModuleMcu\Resources\McuServicePrice\ShowMcuServicePrice;
+use Hanafalah\ModuleMcu\Resources\McuServicePrice\ViewMcuServicePrice;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

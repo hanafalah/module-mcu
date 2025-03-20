@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Contracts;
+namespace Hanafalah\ModuleMcu\Contracts;
 
 use Hanafalah\LaravelSupport\Contracts\DataManagement;
 use Illuminate\Contracts\Database\Eloquent\Builder;

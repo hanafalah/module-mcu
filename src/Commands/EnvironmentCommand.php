@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Commands;
+namespace Hanafalah\ModuleMcu\Commands;
 
 use Hanafalah\LaravelSupport\{
     Commands\BaseCommand

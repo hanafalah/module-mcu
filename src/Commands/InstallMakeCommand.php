@@ -1,8 +1,9 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Commands;
+namespace Hanafalah\ModuleMcu\Commands;
 
-class InstallMakeCommand extends EnvironmentCommand{
+class InstallMakeCommand extends EnvironmentCommand
+{
     /**
      * The name and signature of the console command.
      *
@@ -23,7 +24,7 @@ class InstallMakeCommand extends EnvironmentCommand{
      */
     public function handle()
     {
-        $provider = 'Aibnuhibban\ModuleMcu\ModulePatientServiceProvider';
+        $provider = 'Hanafalah\ModuleMcu\ModulePatientServiceProvider';
 
         $this->comment('Installing Module Patient...');
         $this->callSilent('vendor:publish', [
@@ -37,7 +38,7 @@ class InstallMakeCommand extends EnvironmentCommand{
             '--tag'      => 'migrations'
         ]);
         $this->info('✔️  Created migrations');
-        
+
         $migrations = $this->setMigrationBasePath(database_path('migrations'))->canMigrate();
         $this->callSilent('migrate', ['--path' => $migrations]);
 

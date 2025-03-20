@@ -1,14 +1,14 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Models\McuPackage;
+namespace Hanafalah\ModuleMcu\Models\McuPackage;
 
-use Aibnuhibban\ModuleMcu\Enums\McuPackage\Flag;
+use Hanafalah\ModuleMcu\Enums\McuPackage\Flag;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Hanafalah\LaravelSupport\Concerns\Support\HasEncoding;
 use Hanafalah\LaravelSupport\Models\BaseModel;
 use Hanafalah\LaravelHasProps\Concerns\HasProps;
 use Gilanggustina\ModuleTreatment\Concerns\HasTreatment;
-use Aibnuhibban\ModuleMcu\Resources\McuPackage\{
+use Hanafalah\ModuleMcu\Resources\McuPackage\{
     ViewMcuPackage,
     ShowMcuPackage
 };

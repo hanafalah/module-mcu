@@ -1,8 +1,8 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Schemas;
+namespace Hanafalah\ModuleMcu\Schemas;
 
-use Aibnuhibban\ModuleMcu\Contracts\McuCategory as ContractsMcuCategory;
+use Hanafalah\ModuleMcu\Contracts\McuCategory as ContractsMcuCategory;
 use Illuminate\Database\Eloquent\Builder;
 use Hanafalah\LaravelSupport\Supports\PackageManagement;
 

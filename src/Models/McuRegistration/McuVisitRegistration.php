@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Models\McuRegistration;
+namespace Hanafalah\ModuleMcu\Models\McuRegistration;
 
 use Hanafalah\ModulePatient\Models\EMR\VisitRegistration;
 

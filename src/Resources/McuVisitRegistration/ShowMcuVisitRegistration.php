@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Resources\McuVisitRegistration;
+namespace Hanafalah\ModuleMcu\Resources\McuVisitRegistration;
 
 use Hanafalah\ModulePatient\Resources\VisitRegistration\ShowVisitRegistration;
 

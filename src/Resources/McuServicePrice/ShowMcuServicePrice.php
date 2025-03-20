@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Resources\McuServicePrice;
+namespace Hanafalah\ModuleMcu\Resources\McuServicePrice;
 
 use Hanafalah\LaravelSupport\Resources\ApiResource;
 

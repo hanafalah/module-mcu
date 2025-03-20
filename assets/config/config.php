@@ -1,10 +1,10 @@
-<?php 
+<?php
 
-use Aibnuhibban\ModuleMcu\{
+use Hanafalah\ModuleMcu\{
     Models as ModuleMCU,
     Commands as ModuleMcuCommands
 };
-use Aibnuhibban\ModuleMcu\Contracts;
+use Hanafalah\ModuleMcu\Contracts;
 
 return [
     'commands' => [

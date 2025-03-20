@@ -1,6 +1,6 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu\Resources\McuCategory;
+namespace Hanafalah\ModuleMcu\Resources\McuCategory;
 
 use Hanafalah\LaravelSupport\Resources\ApiResource;
 

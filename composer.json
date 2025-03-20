@@ -1,5 +1,5 @@
 {
-    "name": "aibnuhibban/module-mcu",
+    "name": "hanafalah/module-mcu",
     "description": "module mcu",
     "type": "library",
     "require": {
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Aibnuhibban\\ModuleMcu\\": "src/"
+            "Hanafalah\\ModuleMcu\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Aibnuhibban\\ModuleMcu\\ModuleMcuServiceProvider"
+                "Hanafalah\\ModuleMcu\\ModuleMcuServiceProvider"
             ]
         }
     },

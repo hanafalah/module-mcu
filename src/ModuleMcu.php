@@ -1,8 +1,8 @@
 <?php
 
-namespace Aibnuhibban\ModuleMcu;
+namespace Hanafalah\ModuleMcu;
 
 use Hanafalah\LaravelSupport\Supports\PackageManagement;
-use Aibnuhibban\ModuleMcu\Contracts\ModuleMcu as ContractsModuleMcu;
+use Hanafalah\ModuleMcu\Contracts\ModuleMcu as ContractsModuleMcu;
 
 class ModuleMcu extends PackageManagement implements ContractsModuleMcu {}
